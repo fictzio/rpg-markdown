@@ -11,11 +11,11 @@ If successfull, RPG Markdown may become a common format to write adventures modu
 
 ## The foundation
 
-For this markup language to rest on a solid ground we've based it on the widely used [Markdown|http://daringfireball.net/projects/markdown/] language by John Grüber.
+For this markup language to rest on a solid ground we've based it on the widely used [Markdown](http://daringfireball).net/projects/markdown/] language by John Grüber.
 
-To allow for writing of dialogs RPG Markdown uses the Markdown dialect [Fountain|http://fountain.io/] which allows for writing of screenplays.
+To allow for writing of dialogs RPG Markdown uses the Markdown dialect [Fountain](http://fountain.io/) which allows for writing of screenplays.
 
-We're also using [PHP Markdown Extra|http://michelf.ca/projects/php-markdown/extra/] to allow such things as footnotes and defenition lists.
+We're also using [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) to allow such things as footnotes and defenition lists.
 
 And - there are probably several other sources of inspiration I haven't mentioned yet but they'll recieve their credits when we get to the first release.
 
