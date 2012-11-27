@@ -1,6 +1,10 @@
 # Examples of syntax
 
-## Basices
+** This is a work in progress **
+
+The examples below are subject to change but gives you an idea of how we think.
+
+## Basics
 
 \#heading which normally parses to a heading is regarded as the beginning of an entity. 
 

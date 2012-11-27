@@ -9,7 +9,7 @@ RPG Markdown will also allow writeups of dialogs which can be used to create ses
 
 For us RPG Markdown is the language you use in FictionBoard to write everything from blog posts, adventures modules, chat entries and even rules.
 
-## The foundation
+## 
 
 For this markup language to rest on a solid ground we've based it on the widely used [Markdown](http://daringfireball.net/projects/markdown/) language by John Grüber.
 
@@ -27,34 +27,8 @@ The JSON part is the result of the syntax differientals which tags certain conte
 
 ## Current status
 
-RPG Markdown is still in the works. 
+RPG Markdown is still in the works and a very young project. As it is being used in our project "FictionBoard" we will probably release the spec at the same time as we reach alpha with that project.
+
+## Contributing 
 
 Please feel free to comment on the project, make suggestion and other input.
-
-## Examples of syntax
-
-\#heading which normally parses to a heading is regarded as the beginning of an entity. 
-
-To writeup an npc:
-
-\#npc Dunker Donovan (Fighter, Lvl 3)
-
-Dunker is an able fighter despite his young age. He grew up in the village of Worton in Hale where his father worked as a blacksmith.
-
-\##stats
-
-*strengt* 16, *dexterity* 14, *constitution* 12, *wisdom* 13, *intelligence* 11, *charisma* 7
-
-\##skills
-
-*brawling* 7, *acrobatics* 6, *climb* 4, *perception* 5, *ride* 4
-
-\##feats
-
-- Improved Unarmed Strike
-- Stunning Fist
-
-\##items
-
-- Longsword
-- Chainmail
