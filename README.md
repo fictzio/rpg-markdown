@@ -1,15 +1,23 @@
 # What do we want RPG Markdown to do?
 
-RPG Markdown is an effort to create a markup language that is natural to write, transforms well
-to pdfs and other text formats and can handle storyline elements.
+RPG Markdown is an effort to create a markup language for writing game content. It should be easy to write and read, transforms well
+to pdfs and other text formats and handle storyline elements and flow.
 
-We'll use RPG Markdown to:
+**We'll use RPG Markdown to**
 
-- Write simple data and action points in flowing text.
-- Allow writeups of dialogs, session transcripts, manuscripts for LARPs or NPC dialog in an adventure.
-- Create templates for use with macros
+- write campaign material such as adventures, world and location descriptions, scenes
+- extract data and action points from flowing text (Stats from an NPC, skill check in an adventure scene).
+- allow writeups of dialogs, session transcripts, manuscripts for LARPs or NPC dialog in an adventure.
+- create templates for use with auto-insert macros
+- write blog posts
+- allow for greater chat functionality
 
-For us RPG Markdown is the language you use in FictionBoard to write everything from blog posts, adventures modules, chat entries and even rules.
+**RPG Markdown should**
+
+- render well in a regular markdown parser
+- be system agnostic
+- easily transform from existing text formats
+- work independetly of FictionBoard
 
 ## Buildt on solid foundation
 

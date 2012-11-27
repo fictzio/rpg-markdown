@@ -68,6 +68,11 @@ In this example we're writing an adventure with a few scenes. We've divided it i
 
 \###scene Crossing
 
+The river is really wide and wild. You estimate it to be at least 70 feet. There are trees on both sides.
+
+- [] Throw rope. A very hard check
+- [] Shoot the rope across. Very hard
+
 \###scene The accident
 
 - - -
