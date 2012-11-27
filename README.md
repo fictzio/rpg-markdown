@@ -27,7 +27,7 @@ The JSON part is the result of the syntax differientals which tags certain conte
 
 ## Current status
 
-RPG Markdown is still in the works and a very young project. As it is being used in our project "FictionBoard" we will probably release the spec at the same time as we reach alpha with that project.
+RPG Markdown is still in the works and a very young project. As it is being used in our project "FictionBoard" we will probably release the full spec at the time of its beta release.
 
 ## Contributing 
 

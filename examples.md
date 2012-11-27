@@ -4,7 +4,7 @@
 
 The examples below are subject to change but gives you an idea of how we think.
 
-## Basics
+## Basic syntax examples
 
 \#heading which normally parses to a heading is regarded as the beginning of an entity. 
 
