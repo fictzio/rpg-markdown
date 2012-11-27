@@ -3,13 +3,15 @@
 RPG Markdown is an effort to create a markup language that is natural to write, transforms well
 to pdfs and other text formats and can handle storyline elements.
 
-Another goal with RPG Markdown is for an RPG tool or parser to discover data and actions points in your text and handle these accordingly. Still, we want the data to be in a format that doesn't break the reading.
+We'll use RPG Markdown to:
 
-RPG Markdown will also allow writeups of dialogs which can be used to create session transcripts, manuscripts for LARPs or NPC dialog in an adventure.
+- Write simple data and action points in flowing text.
+- Allow writeups of dialogs, session transcripts, manuscripts for LARPs or NPC dialog in an adventure.
+- Create templates for use with macros
 
 For us RPG Markdown is the language you use in FictionBoard to write everything from blog posts, adventures modules, chat entries and even rules.
 
-## 
+## Buildt on solid foundation
 
 For this markup language to rest on a solid ground we've based it on the widely used [Markdown](http://daringfireball.net/projects/markdown/) language by John Grüber.
 
@@ -18,6 +20,12 @@ To allow for writing of dialogs RPG Markdown uses the Markdown dialect [Fountain
 We're also using [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) to allow such things as footnotes and defenition lists.
 
 And - there are probably several other sources of inspiration I haven't mentioned yet but they'll recieve their credits when we get to the first release.
+
+### Other Markdown inspiration
+
+[Maruku](http://maruku.rubyforge.org/maruku.html)
+[MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+[Pandocs Markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown)
 
 ## The parser
 

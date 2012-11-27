@@ -6,7 +6,7 @@ The examples below are subject to change but gives you an idea of how we think.
 
 ## Basic syntax examples
 
-\#heading which normally parses to a heading is regarded as the beginning of an entity. 
+\#heading , ATX-style headers without whitespace between bracket and header is regarded an entity start, a new data object. Rendered to HTML only text following entity-type; \#entity-type Some name , will be rendered
 
 \*keyname\* will be considered keys for a key-value pair if following a \#entity-start
 
