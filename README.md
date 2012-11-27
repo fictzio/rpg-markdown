@@ -1,12 +1,12 @@
-# What do we want RPG Markdown to do?
+# Purpose of RPG Markdown
 
-RPG Markdown is an effort to create a markup language for writing game content. It should be easy to write and read, transforms well
+RPG Markdown is an effort to create a markup language for writing game content. It should be easy to write and read, transform well
 to pdfs and other text formats and handle storyline elements and flow.
 
 **We'll use RPG Markdown to**
 
 - write campaign material such as adventures, world and location descriptions, scenes
-- extract data and action points from flowing text (Stats from an NPC, skill check in an adventure scene).
+- extract data and action points from flowing text (Stats from an NPC, skill checks in an adventure scene).
 - allow writeups of dialogs, session transcripts, manuscripts for LARPs or NPC dialog in an adventure.
 - create templates for use with auto-insert macros
 - write blog posts
@@ -17,7 +17,31 @@ to pdfs and other text formats and handle storyline elements and flow.
 - render well in a regular markdown parser
 - be system agnostic
 - easily transform from existing text formats
-- work independetly of FictionBoard
+- work independently of FictionBoard
+
+## What is Markdown?
+
+Markdown is just plain text with markup that enables you as a reader to understand the purpose of each text element. The markup is easily rendered to HTML, PDFs or other text formats. Markdown is very lightweight since it's just plain text.
+
+Consider this example
+- - -
+
+\# I'm a heading
+
+I am just plain text but this \_word_ is italic. I want to \*\*make this stand out**.
+
+\- this is a list item
+
+\- and another list item
+
+\## This is a sub heading (Note the two hashes)
+
+Oh, I want to include \[A link to a site](http://link.to/a_site) 
+
+- - -
+
+You do not need a specific editor to write Markdown, notepad or similar will do.
+
 
 ## Buildt on solid foundation
 
