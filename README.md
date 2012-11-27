@@ -23,9 +23,9 @@ And - there are probably several other sources of inspiration I haven't mentione
 
 ### Other Markdown inspiration
 
-[Maruku](http://maruku.rubyforge.org/maruku.html)
-[MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
-[Pandocs Markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown)
+- [Maruku](http://maruku.rubyforge.org/maruku.html)
+- [MultiMarkdown](http://fletcherpenney.net/multimarkdown/)
+- [Pandocs Markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown)
 
 ## The parser
 
