@@ -89,9 +89,9 @@ Renders into
 
 ### First encounter (scene)
 
-[location](location_id)
-[somenpc](npc_id)
-[anothernpc](npc_id)
+- [location](location_id)
+- [somenpc](npc_id)
+- [anothernpc](npc_id)
 
 ### Second encounter (scene)
 
