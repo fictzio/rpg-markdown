@@ -55,11 +55,13 @@ ELVIN
 MARK THE DWARF
 
 \_sighs_
+
 "No other suggestions?"
 
 GNORK THE BARBARIAN
 
 grabs the little dwarf by the feet
+
 "Time to toss!!"
 
 - - -
