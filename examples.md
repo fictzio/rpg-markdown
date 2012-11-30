@@ -70,10 +70,14 @@ In this example we're writing an adventure with a few scenes. We've divided it i
 
 The river is really wide and wild. You estimate it to be at least 70 feet. There are trees on both sides.
 
-- [] Throw rope. A very hard check
-- [] Shoot the rope across. Very hard
+\- [ ] Throw rope. A very hard check
+\- [ ] Shoot the rope across. Very hard
+\- [ ] Swim. Extremely hard. Physical
+\- [ ] Toss the dwarf. Easy
 
 \###scene The accident
+
+Of course things will go bad
 
 - - -
 Renders into
@@ -103,4 +107,13 @@ Renders into
 
 ### Crossing
 
+The river is really wide and wild. You estimate it to be at least 70 feet. There are trees on both sides.
+
+- [ ] Throw rope. A very hard check
+- [ ] Shoot the rope across. Very hard
+- [ ] Swim. Extremely hard. Physical
+- [ ] Toss the dwarf. Easy
+
 ### The accident
+
+Of course things will go bad

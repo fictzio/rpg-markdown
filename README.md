@@ -40,6 +40,35 @@ Oh, I want to include \[A link to a site](http://link.to/a_site)
 
 - - -
 
+or this
+
+- - - 
+
+MARK THE DWARF
+
+"No way we're doing THAT"
+
+ELVIN
+
+"I just said we could toss you"
+
+MARK THE DWARF
+
+\_sighs_
+"No other suggestions?"
+
+GNORK THE BARBARIAN
+
+grabs the little dwarf by the feet
+"Time to toss!!"
+
+- - -
+
+**It's really easy to write!**
+
+The second thing could be a writeup of a dialog, an actual chat transcribt or even a play.
+
+
 You do not need a specific editor to write Markdown, notepad or similar will do.
 
 
