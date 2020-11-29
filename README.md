@@ -2,8 +2,9 @@
 
 # Purpose of RPG Markdown
 
-RPG Markdown is an effort to create a writing rules for game content to make it easily parsable. It should be easy to write and read, transform well
-to pdfs and other text formats and handle storyline elements and flow. Consider RPG Markdown a dialect of standard markdown.
+RPG Markdown is an effort to create structure around writing game content and make it easily parsable. 
+
+It should be easy to write and read, transform well to pdfs and other text formats and handle storyline elements and flow. Consider RPG Markdown a dialect of standard markdown.
 
 **We'll use RPG Markdown to**
 
@@ -46,7 +47,7 @@ And - many more that I haven't mentioned yet. I'll keep adding.
 
 The first parser was built as an extension of [Dominic Baggotts markdown parser](https://github.com/evilstreak/markdown-js) which renders to both HTML and JSON. The JSON part is the result of the syntax differientals which tags certain content as data.
 
-> 2020-11-19, I just started work on rebuilding the parser to work with the [Unified Collective](https://unifiedjs.com/) and especially the markdown parser [Remark] (https://remark.js.org/). 
+> 2020-11-19, I just started work on rebuilding the parser to work with the [Unified Collective](https://unifiedjs.com/) and especially the markdown parser [Remark] (https://remark.js.org/). One goal is to structure RPG Markdown as an [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
 
 ## Current status
 
