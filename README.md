@@ -52,7 +52,7 @@ The first parser was built as an extension of [Dominic Baggotts markdown parser]
 
 ## Current status
 
-2020-11-29, The RPG Markdown concept is being used in my virtual tabletop project [FictionBoard](www.fictionboard.com). It's still in an early phase of development and I just restarted work on the parser and dialect specification.
+2020-11-29, The RPG Markdown concept is being used in my virtual tabletop project [FictionBoard](https://www.fictionboard.com). It's still in an early phase of development and I just restarted work on the parser and dialect specification.
 
 ## Contributing 
 
