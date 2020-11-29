@@ -40,6 +40,7 @@ It also suggest how to use Front Matter to enrich the markdown content.
 - [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/)
 - [Mermaid, charts and diagrams](https://mermaid-js.github.io/mermaid/)
 - [Reveal JS, presentation decks on markdown](https://revealjs.com/)
+- [Homebrewery, DnD nicenes from markdown](https://github.com/naturalcrit/homebrewery)
 
 And - many more that I haven't mentioned yet. I'll keep adding. 
 
