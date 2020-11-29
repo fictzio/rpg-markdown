@@ -17,8 +17,8 @@ It should be easy to write and read, transform well to pdfs and other text forma
 
 **RPG Markdown should**
 
-- render well in a regular markdown parser
-- match Markdowns original purpose of readability
+- render well in regular markdown parsers
+- read wella
 - work independently of FictionBoard
 
 ## The foundation
