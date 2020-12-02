@@ -1,26 +1,27 @@
 > ! November 2020, I'm bringing this to life again!
+# RPG Markdown
 
-# Purpose of RPG Markdown
+RPG Markdown is an effort to create structure for writing game content in a way that makes it readable, easy to write and easily parsable for extraction of data. 
 
-RPG Markdown is an effort to create structure around writing game content and make it easily parsable. 
+RPG Markdown introduces no new syntax to Markdown. 
 
-It should be easy to write and read, transform well to pdfs and other text formats and handle storyline elements and flow. Consider RPG Markdown a dialect of standard markdown.
+RPG Markdown reccomends patterns that a writer should follow to allow parser to extract game data from a text.
 
-**We'll use RPG Markdown to**
+Consider RPG Markdown a dialect of standard markdown.
 
-- write campaign material such as adventures, world and location descriptions, scenes
-- extract data and action points from flowing text (Stats from an NPC, skill checks in an adventure scene).
-- allow writeups of dialogs, session transcripts, manuscripts for LARPs or NPC dialog in an adventure.
-- create templates for use with auto-insert macros
-- write blog posts
-- as part of chat functionality
+**Some uses for RPG Markdown**
+
+- Create source material for games and stories.
+- Structure a plot.
+- Save transcripts of dialogs and game session activity.
+- Write manuscripts for plays, LARPs or NPC dialog in an adventure.
+- Extract data about a game entities for use in bots, virtual tabletops, scripts and macros.
+
 
 **RPG Markdown should**
 
-- render well in regular markdown parsers
-- read wella
-- work independently of FictionBoard
-
+- Render well in regular markdown parsers.
+- Read well.
 ## The foundation
 
 RPG Markdown is a based on [Markdown](http://daringfireball.net/projects/markdown/) language by John Grüber.
