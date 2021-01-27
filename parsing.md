@@ -32,11 +32,9 @@ When grouping objects we call that a collection. A collection typically have att
 
 A key value pair in a text is used when changing or setting values when the text is used as a chunk. 
 
-´´´
 \#\# A deck of tarot cards
 
 theme: ancient-tarot-deck
-´´´
 
 To reference a key in templates we ensure their existence in the data object by doing a key_match on save. If a value is optional for the data object to be a playable entity we indicate this in the data scheme.
 
@@ -48,7 +46,6 @@ These are often mixed with objects but entities is the object type. An entity is
 
 Lists containing key value pairs and preceede by a key are explicity set to be considered objects.
 
-´´´
 Stats:
 - Strength: 2
 - Agility: 5
@@ -56,11 +53,9 @@ Stats:
 - Empathy: 4
 
 Stats: Strength 2, Agility 5, Wits 3, Empathy 4
-´´´
 
 If a list follows a [#header-triggers](header trigger) it is considered an object.
 
-´´´
 Protective gear
 - Gauntlet of strength
   - str: +3
@@ -68,11 +63,9 @@ Protective gear
 - Leather boots of the fox
   - sneak: +1
 - [Ring of protection]
-´´´
 
 Note the "Ring of protection" which is a linked entity. The syntax indicates that in the setting should be a definition of this entity.
 
-´´´
 \#\# Protective gear
 
 - Gauntlet of strength
@@ -81,7 +74,6 @@ Note the "Ring of protection" which is a linked entity. The syntax indicates tha
 - Leather boots of the fox
   - sneak: +1
 - [Ring of protection]
-´´´
 
 #### Referencing objects
 
@@ -102,19 +94,15 @@ The type of header triggers you use is totally up to you but a reccomendation is
 
 Combination triggers:
 
-´´´
 \#\#\# The life of Olaf Tryggvason (A timeline)
 \#\#\# The life of Olaf Tryggvason, a timeline
 \#\#\# Timeline - The life of Olaf Tryggvason
-´´´
 
 Simple triggers
 
-´´´
 \#\#\# Timeline
 
 \*\*Timeline\*\*
-´´´
 
 > Header triggers are often recognized as objects or collections.
 > Bold and strong text used as a header are recognized as header triggers
