@@ -53,6 +53,7 @@ The first parser was built as an extension of [Dominic Baggotts markdown parser]
 
 ## Current status
 
+2021-01-21, RPG Markdown is used in the character sheet module for FictionBoard [FictionBoard Actor Module](https://app.fictionboard.com/actors)
 2020-11-29, The RPG Markdown concept is being used in my virtual tabletop project [FictionBoard](https://www.fictionboard.com). It's still in an early phase of development and I just restarted work on the parser and dialect specification.
 
 ## Contributing 
