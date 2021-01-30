@@ -1,6 +1,11 @@
 # Parsing RPG markdown
 
-> TODO: This needs a lot of rewriting and clarification
+> TODO: 
+> - This needs a lot of rewriting and clarification
+> - Write about AST for RPG Markdown
+> - Fix link references when adressing a concept
+
+The purpose of this is to establish common guidlines for how to interpret text patterns and syntax in RPG text.
 
 ## Objects and collections
 
@@ -26,15 +31,17 @@ A chunk can be "used" as a plot element to set or alter game entities. The narra
 
 ### Collection
 
-When grouping objects we call that a collection. A collection typically have attributes like lenght and type. Actions you can perform on a collection is select one or more, randomize select and move from one collection to another. 
+Grouped objects is called a collection. A collection typically have attributes like lenght and type. Actions you can perform on a collection is select one or more, randomize select and move from one collection to another.
 
 ### Key value pairs
 
-A key value pair in a text is used when changing or setting values when the text is used as a chunk. 
+A key value pair in a text is used when changing or setting values when the text is used as a chunk.
 
-\#\# A deck of tarot cards
+```md
+## A deck of tarot cards
 
 theme: ancient-tarot-deck
+```
 
 To reference a key in templates we ensure their existence in the data object by doing a key_match on save. If a value is optional for the data object to be a playable entity we indicate this in the data scheme.
 
@@ -46,16 +53,27 @@ These are often mixed with objects but entities is the object type. An entity is
 
 Lists containing key value pairs and preceede by a key are explicity set to be considered objects.
 
+This examples should produce an object `stats` with four child objects.
+
+```md
 Stats:
 - Strength: 2
 - Agility: 5
 - Wits: 3
 - Empathy: 4
+```
 
+This example may be considered as ONE object `stats` with string content. 
+
+An RPG Markdown parser should allow game or publisher specific definitions of _named entitiess_ which would allow `stats` to be defined as a list and thus _commas_ treated as seperators.
+
+```md
 Stats: Strength 2, Agility 5, Wits 3, Empathy 4
+```
 
-If a list follows a [#header-triggers](header trigger) it is considered an object.
+If a list follows a [Named header trigger](#named-header-trigger) it is also considered an object.
 
+```md
 Protective gear
 - Gauntlet of strength
   - str: +3
@@ -63,10 +81,12 @@ Protective gear
 - Leather boots of the fox
   - sneak: +1
 - [Ring of protection]
+```
 
 Note the "Ring of protection" which is a linked entity. The syntax indicates that in the setting should be a definition of this entity.
 
-\#\# Protective gear
+```md
+## Protective gear
 
 - Gauntlet of strength
   - str: +3
@@ -74,7 +94,7 @@ Note the "Ring of protection" which is a linked entity. The syntax indicates tha
 - Leather boots of the fox
   - sneak: +1
 - [Ring of protection]
-
+```
 
 #### Referencing objects
 
@@ -95,33 +115,47 @@ The type of header triggers you use is totally up to you but a reccomendation is
 
 Combination triggers:
 
-\#\#\# The life of Olaf Tryggvason (A timeline)
-\#\#\# The life of Olaf Tryggvason, a timeline
-\#\#\# Timeline - The life of Olaf Tryggvason
+```md
+### The life of Olaf Tryggvason (A timeline)
+
+### The life of Olaf Tryggvason, a timeline
+
+### Timeline - The life of Olaf Tryggvason
+```
 
 Simple triggers
 
-\#\#\# Timeline
+```md
+### Timeline
 
-\*\*Timeline\*\*
+**Timeline**
+```
 
 > Header triggers are often recognized as objects or collections.
+
 > Bold and strong text used as a header are recognized as header triggers
+
 > Words and sentences without formatting MAY be set to be recognized as simple triggers
 
 ### Named entities
 
 To accomplish this you need definitions of the entities and the triggers allowed in your game. This example shows how the object stats is recognized if the word "Stats" is the only word on a single line or it appears in uppercase letters. We recognize the named entity as a key and treets what follows as the value.
 
-
+```md
 Stats
-
 Strength 2, Agility 5, Wits 3, Empathy 4
+```
 
 Or
 
+```md
 STATS Strength 2, Agility 5, Wits 3, Empathy 4
+```
 
+Or even named keys
+```md
+Stats: Strength 2, Agilit 5, Wits 3, Empathy 4
+```
 
 ## Patterns
 
@@ -131,7 +165,9 @@ Some text patterns may signify data. Some common patterns you may trigger on
 
 An example for this is how skills may described:
 
+```md
 Ranged attack (Dex): 5
+```
 
 It's possible to define this as a pattern only valid within the context of an actor.
 
@@ -139,17 +175,22 @@ It's possible to define this as a pattern only valid within the context of an ac
 
 This is a common pattern for compact attribute list or similar compact data. The list may or may not contain seperators. An example is the writup of skills and stats for an NPC
 
+```md
 **strength** 16, **dex** 12, **con** 15, **cha** 9, **int** 8, **wis** 11
 
 **brawl** 4, **hand to hand combat** 2
+```
+
 
 ### Simple key value pair lists
 
 This is a common pattern for compact attribute list or similar compact data. The list contains seperators but only weak indicators on key and value. To recognize this we need a preceeding header trigger, a key or named entity trigger. This pattern expects a word to precede a number.
 
+```md
 STATS Strength 2, Agility 5, Wits 3, Empathy 4
 
 BONUSES Strength +2, Agility +1
+```
 
 ### Recognized attributes
 
@@ -157,45 +198,63 @@ This pattern is reliant on a defintion specific to your system. This pattern may
 
 For instance, with a defintion of an attribut _strenght_ matching a string "str" or "strength" followed by a number we can catch these two strings.
 
+```md
 Strength 2, Agility 5, Wits 3, Empathy 4
 
 Str 2, Ag 5, Wit 3, Emp 4
+```
 
 
 #### Example of how to use header triggers in your game
 
-\# Characters
+```md
+# Characters
 
-\#\# Olof Tryggvason (Viking leader)
+## Olof Tryggvason (Viking leader)
 
 Olof is recognized as the king that brought chrisitanity to Norway. 
 
-\*\*Stats\*\*
+**Stats**
 
 str: 18
 dex: 12
 wis: 17
 int: 16
+```
 
+### Dice
 
+A syntax common to RPGs is dice rolls. The parser should be able to recognise these so they can render as roll actions (in a VTT context). These are of course language specific.
+
+`1T6+2`, `1D6+2` 
+
+TODO: Write more about Dice
 ### Header tags
 
 These are header tags
-- The life of Olaf Tryggvason (#timeline)
 
-### sequenced headings
+```md
+## The life of Olaf Tryggvason (#timeline)
+```
+
+
+### Headers in sequence
 
 Create a timeline
 
-\#\# 753 BC: Rome was founded
+```md
+## 753 BC: Rome was founded
 
-\#\# 2003-03-15 - 2003-05-01: First campaign
+## 2003-03-15 - 2003-05-01: First campaign
+```
 
 Structure content into steps
 
-\#\# 1: Choose an archetype
+```md
+## 1: Choose an archetype
 
-\#\# First: Choose an archetype
+## First: Choose an archetype
+```
 
 ### Timelines / Sequences
 
@@ -207,7 +266,8 @@ A timeline or sequence can be created in various ways.
 
 Or create a simple timeline with lists
 
-\#\#\# The life of Olaf Tryggvason (A timeline)
+```md
+### The life of Olaf Tryggvason (A timeline)
 
 * 964 Born
 * 991 Joined raids on England
@@ -215,14 +275,32 @@ Or create a simple timeline with lists
 * 994 Confirmed a christian
 * 995 King of Norway
 * 1000 Died
-
+```
 #### Suggested formating
 
-\#\# 1040, Spring: The first encounter
+```md
+## 1040, Spring: The first encounter
 
 location: Sigthun
+```
 
 So, first a sequence heading followed directly by data. The timeline can be constructed in different ways but typically the text that follows will be displayed together with the header.
+
+### Tables
+
+Tables you wish to expose as a data set should have its own header. Content on the same level as the table is also treated as table data.
+
+```md
+## Common jewels
+
+Value is per carat
+
+| Name | Value |
+| ---- | ----- |
+| Emerald | 2gp |
+| Ruby | 6gp |
+```
+
 
 ## Data templates
 
