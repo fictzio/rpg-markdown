@@ -21,7 +21,7 @@ Some common ways to identify and create a game entity:
 
 ### Example
 
-The headings "Monsters", "NPCs" or "Encounters" could be recognized as collections based game specific definitions. Next level headingings should be parsed into game entities based on collection type.
+The headings "Monsters", "NPCs" or "Encounters" could be recognized as [collections](/#collection) based game specific definitions. Next level headingings should be parsed into game entities based on collection type.
 
 ### Chunks
 
@@ -71,7 +71,7 @@ An RPG Markdown parser should allow game or publisher specific definitions of _n
 Stats: Strength 2, Agility 5, Wits 3, Empathy 4
 ```
 
-If a list follows a [Named header trigger](#named-header-trigger) it is also considered an object.
+If a list follows a [Named header trigger](#header-trigger) it is also considered an object.
 
 ```md
 Protective gear
@@ -94,10 +94,7 @@ Note the "Ring of protection" which is a linked entity. The syntax indicates tha
 - Leather boots of the fox
   - sneak: +1
 - [Ring of protection]
-<<<<<<< HEAD
 ```
-=======
->>>>>>> 8812a9ac5ca5ee9406f134b8a6be33f627e536ea
 
 #### Referencing objects
 
