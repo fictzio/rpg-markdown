@@ -94,7 +94,10 @@ Note the "Ring of protection" which is a linked entity. The syntax indicates tha
 - Leather boots of the fox
   - sneak: +1
 - [Ring of protection]
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 8812a9ac5ca5ee9406f134b8a6be33f627e536ea
 
 #### Referencing objects
 
