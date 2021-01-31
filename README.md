@@ -1,15 +1,16 @@
-> ! November 2020, I'm bringing this to life again!
 # RPG Markdown
 
-RPG Markdown is an effort to create structure for writing game content in a way that makes it readable, easy to write and easily parsable for extraction of data. 
+> ! November 2020, I'm bringing this to life again!
 
-RPG Markdown introduces no new syntax to Markdown. 
+RPG Markdown is an effort to create structured guidelines for writing game content. The goal is readable, easy to write and parsable for extraction of data to game entities.
 
-RPG Markdown reccomends patterns that a writer should follow to allow parser to extract game data from a text.
+RPG Markdown is based on patterns commonly used in TTRPG game texts. 
+
+RPG Markdown recomends patterns that a writer should follow to allow parser to extract game data from a text.
 
 Consider RPG Markdown a dialect of standard markdown.
 
-**Some uses for RPG Markdown**
+## Some uses for RPG Markdown
 
 - Create source material for games and stories.
 - Structure a plot.
@@ -18,10 +19,12 @@ Consider RPG Markdown a dialect of standard markdown.
 - Extract data about a game entities for use in bots, virtual tabletops, scripts and macros.
 
 
-**RPG Markdown should**
+## RPG Markdown should
 
 - Render well in regular markdown parsers.
-- Read well.
+- Read well in Markdown editor.
+- Have syntax that is recognisable to cretors of TTRPG game content.
+
 ## The foundation
 
 RPG Markdown is a based on [Markdown](http://daringfireball.net/projects/markdown/) language by John Grüber.
@@ -53,7 +56,7 @@ The first parser was built as an extension of [Dominic Baggotts markdown parser]
 
 ## Current status
 
-2021-01-21, RPG Markdown is used in the character sheet module for FictionBoard [FictionBoard Actor Module](https://app.fictionboard.com/actors)
+2021-01-21, RPG Markdown is to some extent used in the character sheet module for FictionBoard [FictionBoard Actor Module](https://app.fictionboard.com/actors)
 
 2020-11-29, The RPG Markdown concept is being used in my virtual tabletop project [FictionBoard](https://www.fictionboard.com). It's still in an early phase of development and I just restarted work on the parser and dialect specification.
 
