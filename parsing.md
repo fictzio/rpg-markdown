@@ -47,13 +47,13 @@ To reference a key in templates we ensure their existence in the data object by 
 
 ### Entities
 
-These are often mixed with objects but entities is the object type. An entity is a character but a specific character is an object.
+These are often mixed with objects but entities is the objects type. An entity is a actor but a specific character is an object or occurence.
 
-### Objects
+### Objects / Occurence
 
 Lists containing key value pairs and preceede by a key are explicity set to be considered objects.
 
-This examples should produce an object `stats` with four child objects.
+This examples should produce an object with entity type `stats` with four child objects.
 
 ```md
 Stats:
@@ -71,7 +71,7 @@ An RPG Markdown parser should allow game or publisher specific definitions of _n
 Stats: Strength 2, Agility 5, Wits 3, Empathy 4
 ```
 
-If a list follows a [Named header trigger](#header-trigger) it is also considered an object.
+If a list follows a [Named header trigger](#header-trigger) pattern it is also considered an object. In this example the game system has a header trigger for `protective gear` to be recognized as the entity type `armor`
 
 ```md
 Protective gear
@@ -96,9 +96,9 @@ Note the "Ring of protection" which is a linked entity. The syntax indicates tha
 - [Ring of protection]
 ```
 
-#### Referencing objects
+#### Parsing to JSON
 
-In the example above "Protective gear" is of the data type "armour" and can thus be referenced to by {container.armour}. The container in this case would usually be the actor object.
+In the example above "`Protective gear`" is of the entity type `armor`. After parsing it should be referenced through `data.armor`.
 
 
 ### Header triggers
@@ -301,9 +301,10 @@ Value is per carat
 | Ruby | 6gp |
 ```
 
-
 ## Data templates
 
 Validate data objects against a schema to make sure it's a playable entity. The syntax is rather verbose to ensure readability.
 
 When writing a match you don't need to repeat the \_label as it is automatically used for matching.
+
+
