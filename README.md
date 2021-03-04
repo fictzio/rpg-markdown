@@ -44,6 +44,7 @@ It also suggests how to use Front Matter to enrich the markdown content.
 - [Mermaid, charts and diagrams](https://mermaid-js.github.io/mermaid/)
 - [Reveal JS, presentation decks on markdown](https://revealjs.com/)
 - [Homebrewery, DnD niceness from markdown](https://github.com/naturalcrit/homebrewery)
+- [FicDown, interactive fiction written in markdown](https://www.ficdown.com/)
 
 And many more that I haven't mentioned yet. I'll keep adding.
 
@@ -51,9 +52,13 @@ And many more that I haven't mentioned yet. I'll keep adding.
 
 The first parser was built as an extension of [Dominic Baggotts markdown parser](https://github.com/evilstreak/markdown-js) which renders to both HTML and JSON. The JSON part is the result of the syntax differientals which tags certain content as data.
 
+> 2020-03-03, Using Remark and MDSVEX (Svelte and Markdown) to create rollable tables and lists.
+
 > 2020-11-19, I just started work on rebuilding the parser to work with the [Unified Collective](https://unifiedjs.com/) and especially the markdown parser [Remark](https://remark.js.org/). One goal is to structure RPG Markdown as an [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
 
 ## Current status
+
+2021-03-03, Got a working example of RPG markdown used for rollable tables and lists. Interactive fiction half working.
 
 2021-01-21, RPG Markdown is to some extent used in the character sheet module for [FictionBoard Actor Module](https://app.fictionboard.com/actors)
 
