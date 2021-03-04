@@ -29,7 +29,15 @@ sleep: 0
 
 sleep: -4
 
-This show is SOO GOOD. {name} watches, his eyes slightly open, for more than 30 minutes.
+> {name} picks up the remote and turns on the telly. His favourite show is on!
+
+This show is SOO GOOD. {name} watches intensly.
+
+{#if sleep >= 3}
+
+30 minutes in {pronoun} starts yawning.
+
+{/if}
 
 {#if sleep >= 8}
 
