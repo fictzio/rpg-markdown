@@ -1,8 +1,8 @@
 # Writing RPG Markdown
 
-The goal for RPG Markdown is to "free" data that lives in game source texts and allow developers to use these as game objects.
+A main goal for RPG Markdown is to make data like stat block and similar easier to recognize and parse.
 
-RPG Markdowns does not force you to any specific way to write. Rather, it contains reccomendations on how to structure your content to allow a machine to extract data. 
+RPG Markdowns does not force you to any specific way to write. Rather, it contains reccomendations on how to structure your content to allow a machine to extract data.
 
 ## Basics
 
@@ -39,7 +39,7 @@ Entities typically have attributes that defines them. These are recognised when:
 - Keywords follows a specific keyword or text pattern
 - Formatting follow a specific pattern
 
-#### Example
+#### Example of common way to write stat blocks
 
 STATS
 Strength 2, Agility 5, Wits 3, Empathy 4
@@ -48,6 +48,6 @@ Strength 2, Agility 5, Wits 3, Empathy 4
 
 Relations are recognized the same way as attributes but have to contain a unique value that can be attributed to a specific game entity.
 
-#### Example
+#### Another example
 
 Father: Roger the Hungry

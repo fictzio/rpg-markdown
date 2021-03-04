@@ -4,7 +4,7 @@
 
 RPG Markdown is an effort to create structured guidelines for writing game content. The goal is readable, easy to write and parsable for extraction of data to game entities.
 
-RPG Markdown is based on patterns commonly used in TTRPG game texts. 
+RPG Markdown is based on patterns commonly used in TTRPG game texts.
 
 RPG Markdown recomends patterns that a writer should follow to allow parser to extract game data from a text.
 
@@ -16,8 +16,7 @@ Consider RPG Markdown a dialect of standard markdown.
 - Structure a plot.
 - Save transcripts of dialogs and game session activity.
 - Write manuscripts for plays, LARPs or NPC dialog in an adventure.
-- Extract data about a game entities for use in bots, virtual tabletops, scripts and macros.
-
+- Extract data about a game enteties for use in bots, virtual tabletops, scripts and macros.
 
 ## RPG Markdown should
 
@@ -31,7 +30,7 @@ RPG Markdown is a based on [Markdown](http://daringfireball.net/projects/markdow
 
 To allow for writing of dialogs RPG Markdown uses the Markdown dialect [Fountain](http://fountain.io/) which allows for writing of screenplays.
 
-It also suggest how to use Front Matter to enrich the markdown content.
+It also suggests how to use Front Matter to enrich the markdown content.
 
 ### Markdown inspiration
 
@@ -46,20 +45,20 @@ It also suggest how to use Front Matter to enrich the markdown content.
 - [Reveal JS, presentation decks on markdown](https://revealjs.com/)
 - [Homebrewery, DnD niceness from markdown](https://github.com/naturalcrit/homebrewery)
 
-And - many more that I haven't mentioned yet. I'll keep adding. 
+And many more that I haven't mentioned yet. I'll keep adding.
 
 ## The parser
 
 The first parser was built as an extension of [Dominic Baggotts markdown parser](https://github.com/evilstreak/markdown-js) which renders to both HTML and JSON. The JSON part is the result of the syntax differientals which tags certain content as data.
 
-> 2020-11-19, I just started work on rebuilding the parser to work with the [Unified Collective](https://unifiedjs.com/) and especially the markdown parser [Remark] (https://remark.js.org/). One goal is to structure RPG Markdown as an [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
+> 2020-11-19, I just started work on rebuilding the parser to work with the [Unified Collective](https://unifiedjs.com/) and especially the markdown parser [Remark](https://remark.js.org/). One goal is to structure RPG Markdown as an [AST](https://en.wikipedia.org/wiki/Abstract_syntax_tree)
 
 ## Current status
 
-2021-01-21, RPG Markdown is to some extent used in the character sheet module for FictionBoard [FictionBoard Actor Module](https://app.fictionboard.com/actors)
+2021-01-21, RPG Markdown is to some extent used in the character sheet module for [FictionBoard Actor Module](https://app.fictionboard.com/actors)
 
 2020-11-29, The RPG Markdown concept is being used in my virtual tabletop project [FictionBoard](https://www.fictionboard.com). It's still in an early phase of development and I just restarted work on the parser and dialect specification.
 
-## Contributing 
+## Contributing
 
 Please feel free to comment on the project, make suggestion and other input.
