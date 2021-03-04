@@ -6,7 +6,7 @@ layout: interactive-fiction
 theme: vintage
 sleep: 0
 name: Tom
-
+pronoun: he
 ---
 
 # The story about sleepy {name}
@@ -19,7 +19,7 @@ In a tabletop roleplaying setting this could be used as an interlude to let the 
 
 sleep: 0
 
-{name} is a sleepy little boy. He is so sleepy that he never takes of his pyjamas. Right now, {name} is VERY sleepy. He is watching has favourite show but his eyes are just SO HEAVY.
+{name} is a sleepy little boy. {pronoun} is so sleepy that {pronoun} never takes of his pyjamas. Right now, {name} is VERY sleepy. {pronoun} is watching has favourite show but his eyes are just SO HEAVY.
 
 [Take a short nap on the sofa](#nap)
 
@@ -55,13 +55,13 @@ That was a good nap.
 
 {#if sleep >= 8}
 
-{name} feels so fresh! That was a nice nap! He even opens his eyes slightly. Maybe he should do something?
+{name} feels so fresh! That was a nice nap! {pronoun} even opens his eyes slightly. Maybe {pronoun} should do something?
 
 [Go outside](#outside)
 
 [Go watch some television](#telly)
 
-[Take an short nap](#nap)
+[Take a short nap](#nap)
 
 {/if}
 
@@ -79,9 +79,9 @@ That was a good nap.
 
 sleep: 8
 
-That was nice. {name} loves sleeping. Now he is in the mood to do something fun.
+That was nice. {name} loves sleeping. Now {pronoun} is in the mood to do something fun.
 
-[Take an short nap](#nap)
+[Take a short nap](#nap)
 
 [Go outside](#outside)
 
@@ -91,17 +91,17 @@ That was nice. {name} loves sleeping. Now he is in the mood to do something fun.
 
 sleep: -3
 
-The sun is so bright. Even though his eyes are nearly closed {name} is blinded. He takes a couple of steps out on the porch.
+The sun is so bright. Even though his eyes are nearly closed, {name} is blinded by the sudden light. {pronoun} takes a couple of steps out on the porch.
 
 {#if sleep<8}
 
-He is exhausted. 
+He is exhausted.
 
-[Go inside and take an short nap](#nap)
+[Go inside and take and short nap](#nap)
 
 {:else}
 
-It feels really good. {name} opens his eyes slightly more. He can see something green.
+It feels really good. {name} opens his eyes slightly more. {pronoun} can see something green.
 
 [Go explore green](#end)
 
