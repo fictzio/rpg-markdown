@@ -6,21 +6,21 @@ bagel: false
 
 ## Waking up
 
-INT. BEDROOM - MORNING
+INT. BEDROOM — MORNING
 
 You wake up to the sound of an alarm. You look to your clock and 
 see that it's 8:00 AM.
 
-*8:00AM!!* 
+*8:00AM!!*
 
 Your shift starts in 15 minutes!
 
-[snooze: Forget it. You set the alarm to snooze.](next)
-[get up: Get up and rush to work.](#Outside)
+[Snooze: Forget it. You set the alarm to snooze.](next)
+[Get up: Get up and rush to work.](#Outside)
 
 ## Oversleeping
 
-INT. BEDROOM - MORNING
+INT. BEDROOM — MORNING
 
 You look to your alarm. It's now 9:42 AM.
 
@@ -66,7 +66,7 @@ The bagel taste wonderfull.
 
 ## Work
 
-INT. THE OFFICE - DAY
+INT. THE OFFICE — DAY
 
 BOSS
 (Your boss looks at you. Annoyed.)
@@ -105,19 +105,19 @@ You still have half a bagel in your pocket. In a desperate attempt to fix the si
 
 {/if}
 
-###
+### Step
 
 BOSS
 (He looks at you)
 Do you think you can get the job back by offering me a bagel?
 
-###
+### Step 2
 
 BOSS
 (Looks at the bagel)
 Is it from Sams?
 
-###
+### Step 3
 
 {#if bagel=2}
 
@@ -130,13 +130,13 @@ Do you want it?
 
 YOU
 (Nodding)
-You can have this. 
+You can have this.
 
 I've only eaten half.
 
 {/if}
 
-###
+### Step 4
 
 BOSS
 (Eagerly grabs for the donut)

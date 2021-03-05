@@ -5,6 +5,7 @@ type: story
 layout: interactive-fiction
 theme: vintage
 sleep: 0
+time: 0
 name: Tom
 pronoun: he
 ---
@@ -28,6 +29,7 @@ sleep: 0
 ## Telly
 
 sleep: -4
+time: +1
 
 > {name} picks up the remote and turns on the telly. His favourite show is on!
 
@@ -35,7 +37,7 @@ This show is SOO GOOD. {name} watches intensly.
 
 {#if sleep >= 3}
 
-30 minutes in {pronoun} starts yawning.
+45 minutes in {pronoun} starts yawning. Maybe I should take a nap he thinks to himself.
 
 {/if}
 
@@ -58,6 +60,7 @@ This show is SOO GOOD. {name} watches intensly.
 ## Nap
 
 sleep: 2
+time: +1
 
 That was a good nap.
 
@@ -71,9 +74,7 @@ That was a good nap.
 
 [Take a short nap](#nap)
 
-{/if}
-
-{#if sleep < 8}
+{:else}
 
 {name} is still tired. That nap didn't really fill him up.
 
@@ -86,6 +87,7 @@ That was a good nap.
 ## Sleep
 
 sleep: 8
+time: +8
 
 That was nice. {name} loves sleeping. Now {pronoun} is in the mood to do something fun.
 
@@ -98,6 +100,7 @@ That was nice. {name} loves sleeping. Now {pronoun} is in the mood to do somethi
 ## Outside
 
 sleep: -3
+time: +1
 
 The sun is so bright. Even though his eyes are nearly closed, {name} is blinded by the sudden light. {pronoun} takes a couple of steps out on the porch.
 
@@ -117,6 +120,6 @@ It feels really good. {name} opens his eyes slightly more. {pronoun} can see som
 
 ## End
 
-Wow! So this is nature! {name} steps onto the lawn and feels the spiky, soft green tickle his feet. His mom is very fond of nature. {name} really understands why. This is awesome.
+Wow! So this is nature! {name} steps onto the lawn and feels the spiky, soft green tickle his feet. His mom is very fond of nature. {name} really understands why. This is awesome. {name} feels refreshed like he's never felt before. This is even better than sleeping.
 
 THE END
