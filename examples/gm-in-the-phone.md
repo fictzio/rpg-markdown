@@ -15,7 +15,6 @@ Goal: Who's going home first
 
 ## 1 Choose type of business
 
-|---|---|
 |Roll|Value|
 |---|---|
 |1|Amusement park|
@@ -37,6 +36,7 @@ REPEAT X
 
 Vote
 
+
 ## 5.2 Play scene 30 seconds
 
 REPEAT X
@@ -45,8 +45,7 @@ REPEAT X
      5.2.2 Happy
 3. Play scene
 
-Vote
-
+[Vote](/vote Who wins? {playerlist})
 
 ### 5.2.1 Angry scene
 
