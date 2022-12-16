@@ -12,12 +12,15 @@ Goal: Who's going home first
 
 Overall goal for the game is to convince the other characters that you are the chosen one.
 
-1. Setting | Choose type of business
-2. Describe a characteristic for the business
+1. Choose setting | Choose type of business
+2. Location
 3. Create characters
 4. Set releationship
-5. Play scenes
-6. End
+5. Play scenes 60 sec
+6. Play scenes 30 sec
+7. lay scenes 15 sec
+8. Play scenes 5 sec
+9. End
 
 
 ## 1.Setting
@@ -33,7 +36,13 @@ You are coworkers. Choose your business.
 |5|IT support|
 |6|Nursing home|
 
+## 1.1 Describe setting
+
+Describe a characteristic for the business
+
 ## 2.Location
+
+You are at the restroom
 
 ### Amusement park
 
