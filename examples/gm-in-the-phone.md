@@ -1,12 +1,17 @@
 ---
 Winner: ''
 NPC: Greg
-Players:
-- Anders
-- Patrick
+players:
+- name: ''
+characters:
+- name: ''
+- relation: ''
+- role: ''
 Timer: 0
 Goal: Who's going home first
 ---
+
+> What if we run this on only one phone? One master...? Or GM triggered?
 
 # Chosen one
 
@@ -14,15 +19,22 @@ Overall goal for the game is to convince the other characters that you are the c
 
 > Is it possible to write an outline with syntax for if and repeat?
 
-1. Choose setting | Together
-2. Location | Describe business | Each
-3. Create characters | Each
-4. Set releationship | Each
-5. Play scenes 60 sec | Each
-6. Play scenes 30 sec | Each
-7. Play scenes 15 sec | Each
-8. Play scenes 5 sec | Each
+0. Add player
+1. Choose setting | Any
+2. Location | Describe business | Each wait
+3. Create characters | Each clockwise wait
+4. Set releationship | Each counterclockwise
+5. Play scenes 60 sec | Each wait
+6. Play scenes 30 sec | Each wait
+7. Play scenes 15 sec | Each wait
+8. Play scenes 5 sec | Each wait
 9. End | Winner
+
+## 0. Add players
+
+name: input
+
+[Add player](/add player)
 
 
 ## 1.Setting
@@ -38,7 +50,7 @@ You are coworkers. Choose your business.
 |5|IT support|
 |6|Nursing home|
 
-[Select](/select setting)
+[OK](/set setting)
 
 ## 1.1 Describe setting
 
@@ -48,11 +60,24 @@ Describe a characteristic for the business
 
 ## 2.Location
 
+show: {location}
+
 ### Amusement park
 
+template: card
+image: restroom.jpg
+
 You are at the restroom.
+Describe your favourite or least favourite characteristic about the restroom.
+
+[Next](#create_character)
+
 
 ### Call center
+
+template: card
+
+You are at the restroom.
 
 ### Used car dealer
 
@@ -68,17 +93,25 @@ Name:
 Role: 
 Characteristics: 
 
+[Add character](/add)
+
 ## 4. Relationship
 
 template: picker
 
 Select one character and a relationship
 
+List: character
+
+List: relationship
+
 - Hate
 - Love
 - Envy
 - Admiration
 - Pity
+
+[Next](#5_Play_a_60_second_scene)
 
 ## 5. Play a 60 second scene
 
