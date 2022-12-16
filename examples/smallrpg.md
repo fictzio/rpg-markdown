@@ -7,9 +7,22 @@
 5. Play scenes
 6. End
 
-Boss: Greg
+<NPC name="Greg" />
+NPC: Greg
 Players
 Timer 60, 30, 15, 5
+
+## 1 Choose type of business
+
+|---|---|
+|Roll|Value|
+|---|---|
+|1|Amusement park|
+|2|Call center|
+|3|Used car dealer|
+|4|Fast food restaurant|
+|5|IT support|
+|6|Nursing home|
 
 ## 5. Play scenes
 
