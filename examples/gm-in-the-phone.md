@@ -63,61 +63,104 @@ Select one character and a relationship
 - Admiration
 - Pity
 
-## 5. Gameplay Play scenes
+## 5. Play a 60 second scene
 
-## 5.1 Play scene 60 seconds / per character
+### 5.1 Angry scene
 
 timer: 60
 
-REPEAT X
-1. Choose type of scene
-2. Play scene
+You have {timer} seconds for this scene.
+Your character is ANGRY.
+You are at {location}.
+Your goal is {goal}
 
-Vote
+[Start](/countdown(timer))
 
+### 5.2 Happy scene
 
-## 5.2 Play scene 30 seconds
+timer: 60
 
-REPEAT X
-1. Choose type of scene
-     5.2.1 Angry
-     5.2.2 Happy
-3. Play scene
+You have {timer} seconds for this scene.
+Your character is HAPPY.
+You are at {location}.
+Your goal is {goal}
+
+[Start](/countdown(timer))
+
+## 6. Play scene 30 seconds
 
 [Vote](/vote Who wins? {playerlist})
 
-### 5.2.1 Angry scene
+### 6.1 Angry scene
 
 timer: 30
 
 You have {timer} seconds for this scene.
 Your character is angry.
+You are at {location}.
 Your goal is {goal}
 
-[Start](/countdown(timer, 30))
+[Start](/countdown(timer))
 
-### 5.2.2 Happy scene
+### 6.2 Happy scene
 
-You have 30 seconds for this scene.
+timer: 30
+
+You have {timer} seconds for this scene.
 Your character is happy.
+You are at {location}.
 Your goal is {goal}
 
-## 5.3 Play scene 15 seconds
+[Start](/countdown(timer))
 
-REPEAT X
-1. Choose type of scene
-2. Play scene
+## 7 Play scene 15 seconds
 
-Vote
+### 7.1 Angry scene
 
-## 5.4 Play scene 5 seconds
+timer: 15
 
-REPEAT X
-1. Choose type of scene
-2. Play scene
+You have {timer} seconds for this scene.
+Your character is angry.
+You are at {location}.
+Your goal is {goal}
 
-Vote
+[Start](/countdown(timer))
 
-## 6 End
+### 7.2 Happy scene
+
+timer: 15
+
+You have {timer} seconds for this scene.
+Your character is happy.
+You are at {location}.
+Your goal is {goal}
+
+[Start](/countdown(timer))
+
+## 8 Play scene 5 seconds
+
+### 8.1 Angry scene
+
+timer: 5
+
+You have {timer} seconds for this scene.
+Your character is angry.
+You are at {location}.
+Your goal is {goal}
+
+[Start](/countdown(timer))
+
+### 8.2 Happy scene
+
+timer: 5
+
+You have {timer} seconds for this scene.
+Your character is happy.
+You are at {location}.
+Your goal is {goal}
+
+[Start](/countdown(timer))
+
+## 9 End
 
 One liner from the winner
