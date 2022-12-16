@@ -1,5 +1,5 @@
 ---
-Player: You
+Winner: -
 NPC: Greg
 Players:
 - Anders
@@ -14,15 +14,15 @@ Overall goal for the game is to convince the other characters that you are the c
 
 > Is it possible to write an outline with syntax for if and repeat?
 
-1. Choose setting | Choose type of business
-2. Location | Describe business
-3. Create characters
-4. Set releationship
-5. Play scenes 60 sec | Repeat({player.count}), Next
-6. Play scenes 30 sec | Repeat({player.count}), Next
-7. Play scenes 15 sec | Repeat({player.count}), Next
-8. Play scenes 5 sec | Repeat({player.count}), Next
-9. End
+1. Choose setting | Together
+2. Location | Describe business | Each
+3. Create characters | Each
+4. Set releationship | Each
+5. Play scenes 60 sec | Each
+6. Play scenes 30 sec | Each
+7. Play scenes 15 sec | Each
+8. Play scenes 5 sec | Each
+9. End | Winner
 
 
 ## 1.Setting
@@ -38,15 +38,19 @@ You are coworkers. Choose your business.
 |5|IT support|
 |6|Nursing home|
 
+[Select](/select setting)
+
 ## 1.1 Describe setting
 
 Describe a characteristic for the business
 
+[Continue](#location)
+
 ## 2.Location
 
-You are at the restroom
-
 ### Amusement park
+
+You are at the restroom.
 
 ### Call center
 
@@ -103,6 +107,11 @@ Your goal is {goal}
 [Start](/countdown(timer))
 
 ## 6. Play scene 30 seconds
+
+Choose type of scene: Select
+
+- [Angry](6.1)
+- [Happy](6.2)
 
 [Vote](/vote Who wins? {playerlist})
 
