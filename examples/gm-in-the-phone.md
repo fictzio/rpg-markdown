@@ -12,14 +12,16 @@ Goal: Who's going home first
 
 Overall goal for the game is to convince the other characters that you are the chosen one.
 
+> Is it possible to write an outline with syntax for if and repeat?
+
 1. Choose setting | Choose type of business
-2. Location
+2. Location | Describe business
 3. Create characters
 4. Set releationship
-5. Play scenes 60 sec
-6. Play scenes 30 sec
-7. lay scenes 15 sec
-8. Play scenes 5 sec
+5. Play scenes 60 sec | Repeat({player.count}), Next
+6. Play scenes 30 sec | Repeat({player.count}), Next
+7. Play scenes 15 sec | Repeat({player.count}), Next
+8. Play scenes 5 sec | Repeat({player.count}), Next
 9. End
 
 
@@ -64,6 +66,8 @@ Characteristics:
 
 ## 4. Relationship
 
+template: picker
+
 Select one character and a relationship
 
 - Hate
@@ -76,6 +80,7 @@ Select one character and a relationship
 
 ### 5.1 Angry scene
 
+template: card
 timer: 60
 
 You have {timer} seconds for this scene.
@@ -87,6 +92,7 @@ Your goal is {goal}
 
 ### 5.2 Happy scene
 
+template: card
 timer: 60
 
 You have {timer} seconds for this scene.
