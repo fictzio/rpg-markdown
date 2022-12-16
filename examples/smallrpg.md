@@ -7,6 +7,10 @@
 5. Play scenes
 6. End
 
+Boss: Greg
+Players
+Timer 60, 30, 15, 5
+
 ## 5. Play scenes
 
 ## 5.1 Play scene 60 seconds / per character
