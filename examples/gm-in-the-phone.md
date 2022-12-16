@@ -1,19 +1,28 @@
-# Small RPG
+---
+Player: You
+NPC: Greg
+Players:
+- Anders
+- Patrick
+Timer: 0
+Goal: Who's going home first
+---
 
-1. Choose type of business
+# Chosen one
+
+Overall goal for the game is to convince the other characters that you are the chosen one.
+
+1. Setting | Choose type of business
 2. Describe a characteristic for the business
 3. Create characters
 4. Set releationship
 5. Play scenes
 6. End
 
-<NPC name="Greg" />
-NPC: Greg
-Players: []
-Timer: 60, 30, 15, 5
-Goal: Who's going home first
 
-## 1 Choose type of business
+## 1.Setting
+
+You are coworkers. Choose your business.
 
 |Roll|Value|
 |---|---|
@@ -23,6 +32,36 @@ Goal: Who's going home first
 |4|Fast food restaurant|
 |5|IT support|
 |6|Nursing home|
+
+## 2.Location
+
+### Amusement park
+
+### Call center
+
+### Used car dealer
+
+### Fast food restaurant
+
+### IT Support
+
+### Nursing home
+
+## 3. Create character
+
+Name:
+Role: 
+Characteristics: 
+
+## 4. Relationship
+
+Select one character and a relationship
+
+- Hate
+- Love
+- Envy
+- Admiration
+- Pity
 
 ## 5. Gameplay Play scenes
 
