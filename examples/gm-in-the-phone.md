@@ -1,5 +1,5 @@
 ---
-Winner: -
+Winner: ''
 NPC: Greg
 Players:
 - Anders
