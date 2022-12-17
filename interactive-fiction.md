@@ -10,3 +10,4 @@ rather a lightweight complement for gamemaster to author interludes or in-betwee
 - [ZIL, Zork Implementation Language](https://www.ifwiki.org/ZIL)
 - [Inform 7](https://www.ifwiki.org/Inform_7)
 - [Twine](https://www.ifwiki.org/Twine)
+- [https://www.ficdown.com/](FigDown, markdown dialect for interactive fiction)
