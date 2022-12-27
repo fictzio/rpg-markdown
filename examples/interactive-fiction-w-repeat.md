@@ -1,5 +1,5 @@
 -----
-player-names:
+players:
 - Anders
 - Patrick
 - Petter
@@ -15,19 +15,19 @@ vote:
 
 ## Your names
 
-repeat: 
+Your name (player-names): AddPlayer
 
-Your name (player-names): Input
-
+[Add player](#Your names)
+[Start vote](#Questions)
 
 
 ## Questions
 
-repeat: player-names
+repeat: once per player (FROM DROPDOWN)
 
-What do you want to play tomoroow {player-names}?
+What do you want to play tomoroow {players}?
 
-Your vote (vote): Vote
+Your vote (vote): VoteOncePerPlayer
 
 - D&D
 - Formula 1
